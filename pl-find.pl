@@ -2,6 +2,8 @@
 use strict;
 use utf8;
 
+my $args = $#ARGV + 1;
+die "\033[1;31m[ERROR]\033[0m needs 2 args FILE and WORD : ./pl-find.pl FILE WORD\n" if $args != 2;
 
 my $path = $ARGV[0];
 my $word = $ARGV[1];
